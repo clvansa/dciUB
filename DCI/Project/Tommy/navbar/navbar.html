@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Navbar</title>
+</head>
+<body>
+    <nav class="nav">
+        <h1><span class="fa fa-eercast"></span><i class="fa fa-meetup" aria-hidden="true"></i></h1>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <ul id="myList">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+           
+
+        </ul>
+
+       
+    </nav>
+    <script>
+    var hum = document.querySelector('.fa-bars');
+    var nav = document.querySelector('.nav');
+
+    hum.addEventListener('click',()=>{
+
+    nav.classList.toggle('show');
+    
+   
+
+})
+        </script>
+</body>
+</html>

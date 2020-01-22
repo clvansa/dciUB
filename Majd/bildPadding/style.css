@@ -1,0 +1,27 @@
+:root{
+    --base : #dd1903;
+    --spacing : 30;
+    --blur :1 ;
+}
+
+img{
+    width: 400px;
+    padding: var(--spacing);
+    background :var(--base);
+    filter: blur(var(--blur));
+}
+
+body{
+width: 100vw;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.container{
+padding-top: 20px;
+height: 10vh;
+}
+

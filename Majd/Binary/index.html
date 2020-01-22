@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binary</title>
+    <style>
+        input{
+            height: 40px;
+            width: 400px;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <input type="text" id="bin">
+            <input type="text" id="dec">
+        </form>
+    </main>
+    <script>
+    let bin = document.getElementById('bin');
+    let dec = document.getElementById('dec');
+        bin.addEventListener('keyup',(e)=>{
+        let convert = e.target.value.split('');
+        let sum =(convert[0]*8 ) + (convert[1]*4) + (convert[2]*2) + (convert[3]*1);
+ 
+            for (i = 0 ; i<convert.length ;i++){
+                if (convert[i]>1){
+                    return false 
+                }
+            }
+            if(convert.length <4){
+                dec.value = 'type 4 Num';
+            }else{ dec.value = sum;
+            }
+            
+           
+            
+        })
+        
+    
+    </script>
+</body>
+</html>

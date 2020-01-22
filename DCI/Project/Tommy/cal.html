@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calc</title>
+</head>
+<body>
+    <form action="">
+<input type=" text" id='text1' value="2">
+<input type="text" id='text2' value="3">
+<p id='result'>Result = </p>
+<button id='btn'>Clac</button>
+
+    </form>
+    <script>
+    let one = document.getElementById('text1').value;
+    let two = document.getElementById('text2').value;
+    let result = document.getElementById('result').innerHTML;
+   
+    document.getElementById('btn').addEventListener('click',function(){
+        let multi = one+ two;
+        result = "multi"
+        
+    })
+
+    
+    </script>
+</body>
+</html>

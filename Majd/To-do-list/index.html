@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do List</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+        li{
+            background: #eee;
+            line-height: 40px;
+            border-bottom: 1px solid lightgray;
+            font-family: 'Livvic', sans-serif;
+
+            
+        }
+        
+        .container{
+            width: 700px;
+            margin: auto;
+            font-family: 'Livvic', sans-serif;
+
+            
+            
+        }
+        
+        #timeslots {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            width: 485px;
+            height: 50px;
+            
+           
+        }
+        
+        .uhr{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            left: 20px;
+            top: 2%;
+            
+            
+
+        }
+        
+        .round{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background:#f7f7f7;
+            background-image:url(./66-669149_clock-no-hands-png-clipart-roman-numeral-clock.png);
+            background-size: cover;
+            background-position: center;
+            
+            
+        
+        }
+        
+        .min{
+            position: absolute;
+            width: 3px;
+            height: 70px;
+            background: rgba(255,0,0,.6);
+            top: 10%;
+            left: 50%;
+            border-radius: 20px;
+            transform-origin:  bottom
+            
+        }
+        
+        
+        .sec{
+            position: absolute;
+            width: 2px;
+            height: 80px;
+            background: rgba(255,255,0,.6);
+            top: 5%;
+            left: 50%;  
+            border-radius: 20px;
+            transform-origin: bottom;
+            
+        }
+        
+        
+           .hou{
+            position: absolute;
+            width: 5px;
+            height: 50px;
+            background: rgba(0,0,0,.6);
+            top: 20%;
+            left: 50%;
+            border-radius: 20px;
+            transform-origin: bottom;
+            
+        }
+      
+    </style>
+</head>
+<body>
+ <div class="container">
+ <div id="timeslots">
+ <h2 id="slot1"></h2>
+ <h2 id="slot2"></h2>
+ </div>
+  <h1>To Do List </h1>
+   <form action="" id="form">
+       <input type="text" id="text" autocomplete="off" style="width:400px ; height: 30px; font-size:20px" required>
+       <button style="background:#FF0066;border: none ;padding: 2px 20px; font-size: 15px ; font-weight: bold ;height: 35px ;color:white ">Add</button>
+
+    </form>
+   <ul id="list">
+    </ul>
+    
+    <div class="uhr">
+        <div class="round">
+            <span class="hou"></span>
+            <span class="min"></span>
+            <span class="sec"></span>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

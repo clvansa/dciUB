@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>save</title>
+    
+</head>
+<body>
+    <form >
+        <input type="text" id="text" autocomplete="off">
+        <button id="add">Add</button>
+        <button id="display">Display</button>
+    </form>
+    <ul id='result'>
+       
+    </ul>
+    <script>
+       let array = Array();
+       let x = 1;
+        let text = document.getElementById('text');
+
+        document.getElementById('add').addEventListener('click',(e)=>{
+            e.preventDefault();
+            array[x] = text.value;
+            text.value = '';
+            alert(` input ${array[x]} Num ${x}`);
+            x++;
+            
+        });
+        
+        document.getElementById('display').addEventListener('click',(d)=>{
+          let e = '<hr>';
+            d.preventDefault();
+            for (let i=1 ; i<array.length ;i++){
+                
+                e += '<li>'+  array[i] + '</li> <br>'; 
+               
+            }
+            document.getElementById('result').innerHTML = e;
+          
+        })
+
+        
+            
+
+    
+     
+   
+    
+    </script>
+</body>
+</html>
